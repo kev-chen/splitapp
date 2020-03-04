@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/splitapp/static/css/main.b13f73af.chunk.css",
+    "main.css": "/splitapp/static/css/main.a1b1397f.chunk.css",
     "main.js": "/splitapp/static/js/main.0c7119be.chunk.js",
     "main.js.map": "/splitapp/static/js/main.0c7119be.chunk.js.map",
     "runtime-main.js": "/splitapp/static/js/runtime-main.8424df5b.js",
@@ -8,9 +8,9 @@
     "static/js/2.2e2d749f.chunk.js": "/splitapp/static/js/2.2e2d749f.chunk.js",
     "static/js/2.2e2d749f.chunk.js.map": "/splitapp/static/js/2.2e2d749f.chunk.js.map",
     "index.html": "/splitapp/index.html",
-    "precache-manifest.61dac0958b32656ecb3d2fd7b4f5df0a.js": "/splitapp/precache-manifest.61dac0958b32656ecb3d2fd7b4f5df0a.js",
+    "precache-manifest.e1a5c13c07bc34e63ac395afd68c7052.js": "/splitapp/precache-manifest.e1a5c13c07bc34e63ac395afd68c7052.js",
     "service-worker.js": "/splitapp/service-worker.js",
-    "static/css/main.b13f73af.chunk.css.map": "/splitapp/static/css/main.b13f73af.chunk.css.map",
+    "static/css/main.a1b1397f.chunk.css.map": "/splitapp/static/css/main.a1b1397f.chunk.css.map",
     "static/js/2.2e2d749f.chunk.js.LICENSE.txt": "/splitapp/static/js/2.2e2d749f.chunk.js.LICENSE.txt",
     "static/media/device-promo.png": "/splitapp/static/media/device-promo.5fee1e15.png",
     "static/media/icon.png": "/splitapp/static/media/icon.6d8be625.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.8424df5b.js",
     "static/js/2.2e2d749f.chunk.js",
-    "static/css/main.b13f73af.chunk.css",
+    "static/css/main.a1b1397f.chunk.css",
     "static/js/main.0c7119be.chunk.js"
   ]
 }
