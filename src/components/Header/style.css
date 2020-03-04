@@ -16,15 +16,18 @@ header.sub-page {
 
 header .header-icon {
   display: block;
+  
 }
 
-@media (max-width: 549px) {
+@media (max-width: 767px) {
   header .header-icon {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
   }
   header .header-icon img {
     width: 100%;
+    vertical-align: middle;
   }
 }
 
@@ -32,9 +35,11 @@ header .header-icon {
   header .header-icon {
     width: 200px;
     height: 200px;
+    line-height: 200px;
   }
   header .header-icon img {
     width: 100%;
+    vertical-align: middle;
   }
 }
 
