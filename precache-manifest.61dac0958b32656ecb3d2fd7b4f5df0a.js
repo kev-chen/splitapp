@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dff1e52a48628e7bf57e09a075e98b1a",
+    "revision": "da9a25dc039297bb6efafb1f278a8d0a",
     "url": "/splitapp/index.html"
   },
   {
-    "revision": "2c07cb407abbc857fee5",
-    "url": "/splitapp/static/css/main.01ae28b6.chunk.css"
+    "revision": "aed83ed3793b8e0a8482",
+    "url": "/splitapp/static/css/main.b13f73af.chunk.css"
   },
   {
     "revision": "779389b4863d834c8a21",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/splitapp/static/js/2.2e2d749f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2c07cb407abbc857fee5",
-    "url": "/splitapp/static/js/main.3ff75a26.chunk.js"
+    "revision": "aed83ed3793b8e0a8482",
+    "url": "/splitapp/static/js/main.0c7119be.chunk.js"
   },
   {
     "revision": "86e677cb1500bbcc8a0a",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5fee1e156a2d1d906b0ed2a279481d0b",
     "url": "/splitapp/static/media/device-promo.5fee1e15.png"
+  },
+  {
+    "revision": "6d8be62583ce909b1edf9c73e91690b6",
+    "url": "/splitapp/static/media/icon.6d8be625.png"
   },
   {
     "revision": "eb5ff08d3f576416e68b479c14e011c9",
