@@ -2,12 +2,6 @@
   flex-direction: row;
 }
 
-.divider {
-  width: 10px;
-  height:auto;
-  display:inline-block;
-}
-
 .badge-container img {
   width: 200px;
 }
@@ -15,5 +9,19 @@
 @media (min-width: 768px) {
   .badge-container img {
     width: 250px;
+  }
+}
+
+.divider {
+  width: 10px;
+  height: auto;
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+  .divider {
+    width: 0px;
+    height: auto;
+    display: inline-block;
   }
 }
