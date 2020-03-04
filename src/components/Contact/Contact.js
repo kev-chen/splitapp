@@ -4,7 +4,7 @@ import "./style.css";
 const Contact = () => {
   return (
     <footer>
-      <a href="mailto:contact@apolloapp.io">Contact</a>
+      <a href="mailto:kevchen21@gmail.com">Contact</a>
     </footer>
   );
 };
