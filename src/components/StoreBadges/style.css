@@ -1,0 +1,19 @@
+.badge-container {
+  flex-direction: row;
+}
+
+.divider {
+  width: 10px;
+  height:auto;
+  display:inline-block;
+}
+
+.badge-container img {
+  width: 200px;
+}
+
+@media (min-width: 768px) {
+  .badge-container img {
+    width: 250px;
+  }
+}
