@@ -10,7 +10,7 @@ const Header = () => {
       <div class="header-info">
         <h1>Split</h1>
         <p>
-          A beautiful app built to split your expenses with friends
+          A beautiful app built to simplify your hangouts
         </p>
       </div>
     </header>
