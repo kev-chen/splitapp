@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1e0179dcc8248bdbd7734f083fec7651",
+    "revision": "1b642a994a40720b95ad0809ac5088e7",
     "url": "/splitapp/index.html"
   },
   {
-    "revision": "0d4b90d82af997533c57",
+    "revision": "3e48793d7b72a9b773d6",
     "url": "/splitapp/static/css/main.a1b1397f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/splitapp/static/js/2.2e2d749f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0d4b90d82af997533c57",
-    "url": "/splitapp/static/js/main.0c7119be.chunk.js"
+    "revision": "3e48793d7b72a9b773d6",
+    "url": "/splitapp/static/js/main.87a1e53c.chunk.js"
   },
   {
     "revision": "86e677cb1500bbcc8a0a",
