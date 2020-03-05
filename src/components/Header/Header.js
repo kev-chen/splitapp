@@ -4,15 +4,8 @@ import "./style.css";
 const Header = () => {
   return (
     <header>
-      <div class="header-icon">
-        <img src={require("../../assets/icon.png")} alt="logo" />
-      </div>
-      <div class="header-info">
-        <h1>Split</h1>
-        <p>
-          A beautiful app built to simplify your hangouts
-        </p>
-      </div>
+      <img src={require("../../assets/feature-graphic.png")} alt="logo" />
+
     </header>
   );
 };

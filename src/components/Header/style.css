@@ -3,64 +3,11 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 0 20px;
-  padding-top: 40px;
+  height: 400px;
+  background: #ffbd2f;
 }
 
-header.sub-page {
-  padding: 40px 20px;
-  padding-top: 40px;
-  margin-top: 0;
-  background: #f9f9f9;
-}
-
-header .header-icon {
-  display: block;
-  
-}
-
-@media (max-width: 767px) {
-  header .header-icon {
-    width: 150px;
-    height: 150px;
-    line-height: 150px;
-  }
-  header .header-icon img {
-    width: 100%;
-    vertical-align: middle;
-  }
-}
-
-@media (min-width: 768px) {
-  header .header-icon {
-    width: 200px;
-    height: 200px;
-    line-height: 200px;
-  }
-  header .header-icon img {
-    width: 100%;
-    vertical-align: middle;
-  }
-}
-
-header .header-info {
-  padding-left: 20px;
-  text-align: left;
-}
-
-@media (min-width: 768px) {
-  header .header-info {
-    padding-left: 50px;
-  }
-}
-
-header .header-info p {
-  color: #7F7F82;
-  font-size: 1.125rem;
-}
-
-@media (max-width: 549px) {
-  header .header-info p {
-    font-size: 0.9rem;
-  }
+header img {
+  width: 320px;
+  height: 188px;
 }
