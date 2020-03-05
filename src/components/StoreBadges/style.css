@@ -2,13 +2,21 @@
   flex-direction: row;
 }
 
-.badge-container img {
+.app-store {
+  width: 200px;
+}
+
+.play-store {
   width: 200px;
 }
 
 @media (min-width: 768px) {
-  .badge-container img {
+  .app-store {
     width: 250px;
+  }
+
+  .play-store {
+    width: 276px;
   }
 }
 
