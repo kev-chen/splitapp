@@ -47,7 +47,7 @@ function App() {
         <Route
           path="/"
           exact
-          render={() => <HomePage title={home.title} />}
+          render={() => <HomePage title={home.title} subtitle={home.subtitle} text={home.text} />}
           subtitle={home.subtitle}
           text={home.text}
         />
