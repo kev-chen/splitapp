@@ -8,12 +8,12 @@ import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 
 function App() {
-  const [title, setTitle] = useState('Split');
-  const [headerLinks, setHeaderLinks] = useState([
-    { title: 'Home', path: '/' },
-    { title: 'Contact', path: '/contact' },
-  ]);
-  const [home, setHome] = useState({
+  // const [title, setTitle] = useState('Split');
+  // const [headerLinks, setHeaderLinks] = useState([
+  //   { title: 'Home', path: '/splitapp' },
+  //   { title: 'Contact', path: '/splitapp/contact' },
+  // ]);
+  const [home] = useState({
     title: 'Split',
     subtitle: 'Simplify Your Hangouts',
     text:
@@ -23,7 +23,7 @@ function App() {
       'Simply scan the receipt, add your friends and their order, ' +
       'and settle the bill with Venmo.',
   });
-  const [contact, setContact] = useState({ title: 'Contact me' });
+  // const [contact, setContact] = useState({ title: 'Contact me' });
 
   return (
     <Router>
@@ -33,10 +33,10 @@ function App() {
           <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
           <Navbar.Collapse id="navbar-toggle">
             <Nav className="ml-auto">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/splitapp">
                 Home
               </Link>
-              <Link className="nav-link" to="/contact">
+              <Link className="nav-link" to="/splitapp/contact">
                 Contact
               </Link>
             </Nav>
@@ -45,7 +45,7 @@ function App() {
 
 
         <Route
-          path="/"
+          path="/splitapp"
           exact
           render={() => <HomePage title={home.title} subtitle={home.subtitle} text={home.text} />}
           subtitle={home.subtitle}
@@ -53,7 +53,7 @@ function App() {
         />
 
         <Route
-          path="/contact"
+          path="/splitapp/contact"
           render={() => <ContactPage title={home.title} />}
           subtitle={home.subtitle}
           text={home.text}

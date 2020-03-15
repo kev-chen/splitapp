@@ -4,7 +4,7 @@ import Card from '../Card';
 import { Container, Row } from 'react-bootstrap';
 
 const Carousel = (props) => {
-  const [items, setItems] = useState([
+  const [items] = useState([
     {
       id: 0,
       imgSrc: require('../../assets/screenshots/1.png'),
