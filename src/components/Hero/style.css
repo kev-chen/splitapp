@@ -7,21 +7,21 @@
 }
 
 .logo {
-  width: 320px; 
-  height: 188px;
+  width: 240px; 
+  height: 141px;
 }
 
 
 @media (max-width: 767px) {
   .logo {
-    width: 320px;
-    height: 188px;
+    width: 240px;
+    height: 141px;
   }
 }
 
 @media (min-width: 768px) {
   .logo {
-    width: 480px;
-    height: 282px;
+    width: 320px;
+    height: 188px;
   }
 }
