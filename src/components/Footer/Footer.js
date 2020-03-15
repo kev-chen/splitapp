@@ -7,10 +7,10 @@ const Footer = (props) => {
       <Container fluid={true}>
         <Row className="border-top justify-content-between p-3">
           <Col className="p-0" md={3}>
-            © 2020 Kevin Chen
+            Split
           </Col>
-          <Col className="p-0 d-flex justify-content-end" md={4}>
-            This site was made by Kevin Chen.
+          <Col className="p-0 d-flex justify-content-end" md={9}>
+            Copyright © 2020 Kevin Chen. All Rights Reserved.
           </Col>
         </Row>
       </Container>
