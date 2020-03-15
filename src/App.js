@@ -3,6 +3,8 @@ import './App.css';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
+import Footer from './components/Footer';
+
 function App() {
   const [title, setTitle] = useState('Split');
   const [headerLinks, setHeaderLinks] = useState([
@@ -34,6 +36,9 @@ function App() {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
+
+          <Footer />
+
         </Container>
       </Router>
   );
