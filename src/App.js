@@ -4,6 +4,8 @@ import { Container, Navbar, Nav } from 'react-bootstrap';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   const [title, setTitle] = useState('Split');
@@ -24,23 +26,41 @@ function App() {
   const [contact, setContact] = useState({ title: 'Contact me' });
 
   return (
-      <Router>
-        <Container className="p-0" fluid={true}>
-          <Navbar className="border-bottom" bg="transparent" expand="sm">
-            <Navbar.Brand>Split</Navbar.Brand>
-            <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"/>
-            <Navbar.Collapse id="navbar-toggle">
-              <Nav className="ml-auto">
-                <Link className="nav-link" to="/">Home</Link>
-                <Link className="nav-link" to="/contact">Contact</Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar>
+    <Router>
+      <Container className="p-0" fluid={true}>
+        <Navbar className="border-bottom" bg="transparent" expand="sm">
+          <Navbar.Brand>Split</Navbar.Brand>
+          <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
+          <Navbar.Collapse id="navbar-toggle">
+            <Nav className="ml-auto">
+              <Link className="nav-link" to="/">
+                Home
+              </Link>
+              <Link className="nav-link" to="/contact">
+                Contact
+              </Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
 
-          <Footer />
 
-        </Container>
-      </Router>
+        <Route
+          path="/"
+          exact
+          render={() => <HomePage title={home.title} />}
+          subtitle={home.subtitle}
+          text={home.text}
+        />
+
+        <Route
+          path="/contact"
+          render={() => <ContactPage title={home.title} />}
+          subtitle={home.subtitle}
+          text={home.text}
+        />
+        <Footer />
+      </Container>
+    </Router>
   );
 }
 
