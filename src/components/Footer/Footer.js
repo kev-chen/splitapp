@@ -1,21 +1,30 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import React, { useEffect } from 'react';
+import './style.css';
+import { Navbar } from 'react-bootstrap';
 
 const Footer = (props) => {
+  const setFooterHeight = () => {
+    let height = document.getElementById('footer').clientHeight + 50;
+    console.log(height);
+    props.setFooterHeight(height);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', setFooterHeight);
+    setFooterHeight();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
-    <footer className="mt-5">
-      <Container fluid={true}>
-        <Row className="border-top justify-content-between p-3">
-          <Col className="p-0" md={3}>
-            Split
-          </Col>
-          <Col className="p-0 d-flex justify-content-end" md={9}>
-            Copyright © 2020 Kevin Chen. All Rights Reserved.
-          </Col>
-        </Row>
-      </Container>
-    </footer>
-  )
+    <Navbar id="footer" fixed="bottom" className="border-top mt-5" bg="light">
+      <Navbar.Brand>Split</Navbar.Brand>
+      {/* <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" /> */}
+      <Navbar.Toggle />
+      <Navbar.Collapse className="justify-content-end">
+        <Navbar.Text>Copyright © 2020 Kevin Chen. All Rights Reserved.</Navbar.Text>
+      </Navbar.Collapse>
+    </Navbar>
+  );
 };
 
 export default Footer;

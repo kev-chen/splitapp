@@ -25,10 +25,11 @@ function App() {
       'and settle the bill with Venmo.',
   });
   const [contact] = useState({ title: 'Get In Touch' });
+  const [footerHeight, setFooterHeight] = useState(0);
 
   return (
     <Router>
-      <Container className="p-0" fluid={true}>
+      <Container className="p-0" fluid={true} style={{marginBottom: `${footerHeight}px`}}>
         <Navbar className="border-bottom" bg="transparent" expand="sm">
           <Navbar.Brand>Split</Navbar.Brand>
           <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
@@ -59,8 +60,9 @@ function App() {
           subtitle={home.subtitle}
           text={home.text}
         />
-        <Footer />
       </Container>
+
+      <Footer setFooterHeight={setFooterHeight} />
     </Router>
   );
 }
