@@ -14,7 +14,6 @@ const Footer = (props) => {
           </Col>
         </Row>
       </Container>
-
     </footer>
   )
 };

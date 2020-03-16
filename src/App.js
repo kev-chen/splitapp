@@ -15,6 +15,7 @@ function App() {
   // ]);
   const [home] = useState({
     title: 'Split',
+    icon: require('./assets/app-icon.png'),
     subtitle: 'Simplify Your Hangouts',
     text:
       'Split is the simplest way to separate checks. ' +
@@ -23,7 +24,7 @@ function App() {
       'Simply scan the receipt, add your friends and their order, ' +
       'and settle the bill with Venmo.',
   });
-  // const [contact, setContact] = useState({ title: 'Contact me' });
+  const [contact] = useState({ title: 'Get In Touch' });
 
   return (
     <Router>
@@ -47,14 +48,14 @@ function App() {
         <Route
           path="/splitapp"
           exact
-          render={() => <HomePage title={home.title} subtitle={home.subtitle} text={home.text} />}
+          render={() => <HomePage title={home.title} icon={home.icon} subtitle={home.subtitle} text={home.text} />}
           subtitle={home.subtitle}
           text={home.text}
         />
 
         <Route
           path="/splitapp/contact"
-          render={() => <ContactPage title={home.title} />}
+          render={() => <ContactPage title={contact.title} />}
           subtitle={home.subtitle}
           text={home.text}
         />
