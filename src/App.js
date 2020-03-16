@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import './App.css';
-import { Container, Navbar, Nav } from 'react-bootstrap';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
+import Header from './components/Header';
 
 function App() {
   // const [title, setTitle] = useState('Split');
@@ -29,27 +30,20 @@ function App() {
 
   return (
     <Router>
-      <Container className="p-0" fluid={true} style={{marginBottom: `${footerHeight}px`}}>
-        <Navbar className="border-bottom" bg="transparent" expand="sm">
-          <Navbar.Brand>Split</Navbar.Brand>
-          <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
-          <Navbar.Collapse id="navbar-toggle">
-            <Nav className="ml-auto">
-              <Link className="nav-link" to="/splitapp">
-                Home
-              </Link>
-              <Link className="nav-link" to="/splitapp/contact">
-                Contact
-              </Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-
+      <Container className="p-0" fluid={true} style={{ marginBottom: `${footerHeight}px` }}>
+        <Header />
 
         <Route
           path="/splitapp"
           exact
-          render={() => <HomePage title={home.title} icon={home.icon} subtitle={home.subtitle} text={home.text} />}
+          render={() => (
+            <HomePage
+              title={home.title}
+              icon={home.icon}
+              subtitle={home.subtitle}
+              text={home.text}
+            />
+          )}
           subtitle={home.subtitle}
           text={home.text}
         />
@@ -60,9 +54,9 @@ function App() {
           subtitle={home.subtitle}
           text={home.text}
         />
-      </Container>
 
-      <Footer setFooterHeight={setFooterHeight} />
+        <Footer setFooterHeight={setFooterHeight} />
+      </Container>
     </Router>
   );
 }
