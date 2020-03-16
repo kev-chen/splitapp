@@ -1,30 +1,28 @@
-.badge-container {
+
+img {
+  width: 188px;
+  height: 56px;
+}
+
+.app-store-container {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  margin-top: 30px;
 }
 
-.badge-container img {
-  width: 200px;
+.play-store-container {
+  display: flex;
+  justify-content: center;
 }
 
-@media (min-width: 768px) {
-  .badge-container img {
-    width: 250px;
+@media only screen and (min-width: 768px) {
+  .app-store-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .play-store-container {
+    display: flex;
+    justify-content: flex-start;
   }
 }
 
-.divider {
-  width: 10px;
-  height: auto;
-  display: inline-block;
-}
-
-@media (max-width: 767px) {
-  .divider {
-    width: 0px;
-    height: auto;
-    display: inline-block;
-  }
-}
