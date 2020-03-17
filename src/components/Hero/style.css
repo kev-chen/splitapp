@@ -1,0 +1,22 @@
+
+.header-icon {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  margin-bottom: 75px;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .header-icon {
+    width: 275px;
+    height: 275px;
+    line-height: 275px;
+    margin-right: 60px;
+  }
+}
+
+h3 {
+  color: #6F6F6F;
+  padding: 0 0 20px 0;
+}
