@@ -3,7 +3,6 @@ import './style.css';
 import Hero from '../../components/Hero';
 import Carousel from '../../components/Carousel';
 import StoreBadges from '../../components/StoreBadges';
-import Content from '../../components/StoreBadges';
 
 const HomePage = (props) => {
   return (
@@ -11,9 +10,7 @@ const HomePage = (props) => {
       <Hero title={props.title} icon={props.icon} subtitle={props.subtitle} text={props.text} />
 
       <Carousel />
-      <Content>
-        <StoreBadges />
-      </Content>
+      <StoreBadges />
     </div>
   );
 };
