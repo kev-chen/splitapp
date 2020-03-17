@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = (props) => {
+  const setHeaderHeight = () => {
+    let height = document.getElementById('footer').clientHeight;
+    console.log(height);
+    props.setHeaderHeight(height);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', setHeaderHeight);
+    setHeaderHeight();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
-    <Navbar className="border-bottom" bg="transparent" expand="sm">
+    <Navbar id="header" className="border-bottom" bg="transparent" expand="sm">
       <Navbar.Brand>Split</Navbar.Brand>
       <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
       <Navbar.Collapse id="navbar-toggle">

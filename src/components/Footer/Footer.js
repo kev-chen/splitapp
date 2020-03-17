@@ -4,7 +4,7 @@ import { Navbar } from 'react-bootstrap';
 
 const Footer = (props) => {
   const setFooterHeight = () => {
-    let height = document.getElementById('footer').clientHeight + 50;
+    let height = document.getElementById('footer').clientHeight;
     console.log(height);
     props.setFooterHeight(height);
   };
@@ -16,9 +16,8 @@ const Footer = (props) => {
   }, []);
 
   return (
-    <Navbar id="footer" fixed="bottom" className="border-top mt-5" bg="light">
+    <Navbar id="footer" sticky="bottom" className="border-top mt-5" bg="light">
       <Navbar.Brand>Split</Navbar.Brand>
-      {/* <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" /> */}
       <Navbar.Toggle />
       <Navbar.Collapse className="justify-content-end">
         <Navbar.Text>Copyright © 2020 Kevin Chen. All Rights Reserved.</Navbar.Text>

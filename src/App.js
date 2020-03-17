@@ -9,11 +9,6 @@ import ContactPage from './pages/ContactPage';
 import Header from './components/Header';
 
 function App() {
-  // const [title, setTitle] = useState('Split');
-  // const [headerLinks, setHeaderLinks] = useState([
-  //   { title: 'Home', path: '/splitapp' },
-  //   { title: 'Contact', path: '/splitapp/contact' },
-  // ]);
   const [home] = useState({
     title: 'Split',
     icon: require('./assets/app-icon.png'),
@@ -27,11 +22,12 @@ function App() {
   });
   const [contact] = useState({ title: 'Get In Touch' });
   const [footerHeight, setFooterHeight] = useState(0);
+  const [headerHeight, setHeaderHeight] = useState(0);
 
   return (
     <Router>
-      <Container className="p-0" fluid={true} style={{ marginBottom: `${footerHeight}px` }}>
-        <Header />
+      <Container className="p-0" fluid={true} >
+        <Header setHeaderHeight={setHeaderHeight} />
 
         <Route
           path="/splitapp"
@@ -50,7 +46,7 @@ function App() {
 
         <Route
           path="/splitapp/contact"
-          render={() => <ContactPage title={contact.title} />}
+          render={() => <ContactPage title={contact.title} footerHeight={footerHeight} headerHeight={headerHeight} />}
           subtitle={home.subtitle}
           text={home.text}
         />

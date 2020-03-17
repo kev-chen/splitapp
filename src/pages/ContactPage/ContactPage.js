@@ -1,12 +1,14 @@
 import React from 'react';
-import './style.css';
+
 import ContactForm from '../../components/ContactForm';
 import Hero from '../../components/Hero';
 import Content from '../../components/Content';
 
 const ContactPage = (props) => {
   return (
-    <div>
+    <div
+      id="wrap"
+      style={{ minHeight: `calc(100vh - ${props.footerHeight + props.headerHeight}px)` }}>
       <Hero title={props.title} />
       <Content>
         <ContactForm />
