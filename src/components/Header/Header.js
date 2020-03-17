@@ -21,6 +21,9 @@ const Header = (props) => {
       <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
       <Navbar.Collapse id="navbar-toggle">
         <Nav className="ml-auto">
+          <a className="nav-link" href="https://github.com/kev-chen/splitapp" target="_blank" rel="noopener noreferrer">
+            See this page on GitHub
+          </a>
           <Link className="nav-link" to="/splitapp">
             Home
           </Link>
