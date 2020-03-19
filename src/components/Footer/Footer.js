@@ -5,7 +5,6 @@ import { Navbar } from 'react-bootstrap';
 const Footer = (props) => {
   const setFooterHeight = () => {
     let height = document.getElementById('footer').clientHeight + 50;
-    console.log(height);
     props.setFooterHeight(height);
   };
 
