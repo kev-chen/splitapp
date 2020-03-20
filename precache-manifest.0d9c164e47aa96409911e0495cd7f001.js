@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "31ff72da4061cbcd118b77328cd6cb21",
+    "revision": "b90b317050e6c5926ddee9ea481aa95d",
     "url": "/splitapp/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/splitapp/static/css/2.67123b20.chunk.css"
   },
   {
-    "revision": "4c5ef6429ff2c210a113",
+    "revision": "68787b70438dec5b91ff",
     "url": "/splitapp/static/css/main.68062f45.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/splitapp/static/js/2.e4cb16cc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4c5ef6429ff2c210a113",
-    "url": "/splitapp/static/js/main.848cff30.chunk.js"
+    "revision": "68787b70438dec5b91ff",
+    "url": "/splitapp/static/js/main.36d80a4b.chunk.js"
   },
   {
     "revision": "86e677cb1500bbcc8a0a",
