@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d191154a38a7ddeb5268c3dd61baa2bb",
+    "revision": "31ff72da4061cbcd118b77328cd6cb21",
     "url": "/splitapp/index.html"
   },
   {
-    "revision": "4e2f2ac59be64ccb3915",
+    "revision": "3f1bd3a8223bf4cd4318",
     "url": "/splitapp/static/css/2.67123b20.chunk.css"
   },
   {
-    "revision": "40200d6cee317cb36c57",
-    "url": "/splitapp/static/css/main.701c5b03.chunk.css"
+    "revision": "4c5ef6429ff2c210a113",
+    "url": "/splitapp/static/css/main.68062f45.chunk.css"
   },
   {
-    "revision": "4e2f2ac59be64ccb3915",
-    "url": "/splitapp/static/js/2.6af25f0d.chunk.js"
+    "revision": "3f1bd3a8223bf4cd4318",
+    "url": "/splitapp/static/js/2.e4cb16cc.chunk.js"
   },
   {
     "revision": "eff3b4d7e4bb0087ce53139cd90bc880",
-    "url": "/splitapp/static/js/2.6af25f0d.chunk.js.LICENSE.txt"
+    "url": "/splitapp/static/js/2.e4cb16cc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "40200d6cee317cb36c57",
-    "url": "/splitapp/static/js/main.a5708eff.chunk.js"
+    "revision": "4c5ef6429ff2c210a113",
+    "url": "/splitapp/static/js/main.848cff30.chunk.js"
   },
   {
     "revision": "86e677cb1500bbcc8a0a",
