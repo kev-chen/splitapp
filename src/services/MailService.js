@@ -11,11 +11,9 @@ const MailService = {
       name,
     })
       .then((response) => {
-        console.log(response);
         if (callback) callback(true);
       })
       .catch((error) => {
-        console.log(error);
         if (callback) callback(false);
       });
   },
