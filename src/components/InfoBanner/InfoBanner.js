@@ -16,7 +16,7 @@ const InfoBanner = (props) => {
           {props.info.map((item, index) => (
             <Col className="text-center mb-5 mb-md-0 mb-lg-0">
               <CircleNumber number={index+1} />
-              <p className="font-weight-lighter">{item}</p>
+              <p className="font-weight-light">{item}</p>
             </Col>
           ))}
         </Row>

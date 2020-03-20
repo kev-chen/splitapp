@@ -7,7 +7,7 @@ const DescriptionBanner = (props) => {
       <Container fluid={true}>
         <Row className="justify-content-center">
           <Col className="text-center" md={10}>
-            <h3 className="blockquote font-weight-lighter" id="description">
+            <h3 className="blockquote font-weight-light" id="description">
               {props.text}
             </h3>
           </Col>
