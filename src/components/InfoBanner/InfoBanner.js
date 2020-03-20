@@ -14,7 +14,7 @@ const InfoBanner = (props) => {
         </Row>
         <Row className="justify-content-center p-5">
           {props.info.map((item, index) => (
-            <Col className="text-center mb-5 mb-md-0 mb-lg-0">
+            <Col className={`text-center ${index+1 === props.info.length ? 'mb-0' : 'mb-5'} mb-md-0 mb-lg-0`}>
               <CircleNumber number={index+1} />
               <p className="font-weight-light">{item}</p>
             </Col>
