@@ -6,7 +6,7 @@ const StoreBadges = (props) => {
   return (
     <Container fluid={true}>
       <Row className="justify-content-center py-5">
-        <Col className="app-store-container">
+        <Col className="app-store-container mb-2 mb-md-0 mb-lg-0">
           <a
             target="_blank"
             rel="noopener noreferrer"
